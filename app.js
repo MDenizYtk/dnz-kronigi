@@ -235,15 +235,21 @@
   });
 
   /* Kaydırma olayı saniyede yüzlerce kez gelir; çizimi ekranın kendi karesine
-     hizalayınca hem daha akıcı olur hem de gereksiz iş yapılmaz. */
+     hizalayınca hem daha akıcı olur hem de gereksiz iş yapılmaz.
+     Kare isteği bazı ortamlarda (arka plandaki sekme) hiç gelmediği için
+     kısa bir zamanlayıcı yedeği bırakılıyor. */
   var bekleyen = false;
   function istek() {
     if (bekleyen) return;
     bekleyen = true;
-    (window.requestAnimationFrame || function (f) { setTimeout(f, 16); })(function () {
+    var calistir = function () {
+      if (!bekleyen) return;
       bekleyen = false;
+      clearTimeout(yedek);
       guncelle();
-    });
+    };
+    var yedek = setTimeout(calistir, 90);
+    if (window.requestAnimationFrame) requestAnimationFrame(calistir);
   }
   window.addEventListener('scroll', istek, { passive: true });
   window.addEventListener('resize', istek);

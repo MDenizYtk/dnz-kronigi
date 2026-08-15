@@ -77,13 +77,19 @@
     var s = document.getElementById('sayilar');
     if (s && s.getBoundingClientRect().top < vh * 0.85) sayimBaslat();
   }
+  /* aynı kare hizalaması, zamanlayıcı yedeğiyle */
   var bekleyen = false;
   function istek() {
     if (bekleyen) return;
     bekleyen = true;
-    (window.requestAnimationFrame || function (f) { setTimeout(f, 16); })(function () {
-      bekleyen = false; kontrol();
-    });
+    var calistir = function () {
+      if (!bekleyen) return;
+      bekleyen = false;
+      clearTimeout(yedek);
+      kontrol();
+    };
+    var yedek = setTimeout(calistir, 90);
+    if (window.requestAnimationFrame) requestAnimationFrame(calistir);
   }
   window.addEventListener('scroll', istek, { passive: true });
   window.addEventListener('resize', istek);
