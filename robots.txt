@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mdenizytk.github.io/dnz-kronigi/sitemap.xml
+Sitemap: https://dnzdijital.work/sitemap.xml

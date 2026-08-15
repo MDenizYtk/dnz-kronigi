@@ -5,7 +5,7 @@
 // sancaklar alır; çalışmadığında da bütün eserler okunabilir kalır.
 const fs = require('fs');
 
-const ADRES = 'https://mdenizytk.github.io/dnz-kronigi/';
+const ADRES = 'https://dnzdijital.work/';
 
 global.window = {};
 eval(fs.readFileSync('data.js', 'utf8'));
