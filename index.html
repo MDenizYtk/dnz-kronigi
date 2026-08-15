@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DNZ Kroniği — Yapılmış İşlerin Kütüğü</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=21">
+</head>
+<body>
+
+<!-- yükleme perdesi -->
+<div class="perde" id="perde">
+  <div class="perde-ic">
+    <span class="perde-yazi">DNZ KRONİĞİ</span>
+    <div class="perde-bar"><i id="perdeFill"></i></div>
+    <span class="perde-sayi" id="perdeSayi">0</span>
+  </div>
+</div>
+
+<div class="isik" id="isik"></div>
+<div class="imlec" id="imlec"><span></span></div>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+
+<header class="topbar">
+  <div class="crest">DNZ</div>
+  <nav>
+    <a href="#kutuk">Kütük</a>
+    <a href="#loncalar">Loncalar</a>
+    <a href="#mektup">Mektup</a>
+  </nav>
+</header>
+
+<!-- KAPI / GİRİŞ -->
+<section class="gate" id="gate">
+  <div class="gate-sticky">
+    <div class="gate-scene">
+      <div class="gate-bg">
+        <p class="kicker">Anno Domini MMXXVI</p>
+        <h1 class="title">DNZ Kroniği</h1>
+        <p class="sub">Yirmi eser, yirmi küçük dert ve her birine yazılmış bir çözüm.<br>Aşağı in, kapılar açılsın.</p>
+        <div class="scroll-hint"><span></span>aşağı in</div>
+      </div>
+      <div class="kemer"></div>
+      <div class="door door-l"><div class="door-face"></div></div>
+      <div class="door door-r"><div class="door-face"></div></div>
+      <div class="esik"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ÖNSÖZ -->
+<section class="onsoz">
+  <p class="kicker" data-reveal>Önsöz</p>
+  <p class="onsoz-metin" data-reveal>
+    Buradaki eserlerin hiçbiri iş olsun diye yazılmadı. Her biri gündelik bir aksaklıktan doğdu:
+    kaybolan bir not, boşa giden bir sulama, kâğıt deftere yazılan bir randevu, gece çöken bir sunucu.
+    Aşağıdaki koridorda ilerlerken her tomarda önce o kıvılcımı, sonra ondan çıkan uygulamayı göreceksiniz.
+  </p>
+  <p class="onsoz-alt" data-reveal>Yirmi eser, beş lonca, tek bir geliştirici.</p>
+</section>
+
+<!-- KÜTÜK / 3B KORİDOR -->
+<section class="corridor" id="kutuk">
+  <div class="corridor-sticky">
+    <div class="hall">
+      <div class="pillar pillar-l"></div>
+      <div class="pillar pillar-r"></div>
+      <div class="floor"></div>
+      <div class="deck" id="deck"></div>
+    </div>
+    <div class="hud">
+      <span id="hudIndex">01</span>
+      <div class="hudbar"><i id="hudFill"></i></div>
+      <span id="hudTotal">20</span>
+    </div>
+  </div>
+</section>
+
+<!-- KAYAN ŞERİT -->
+<div class="serit" aria-hidden="true">
+  <div class="serit-ic" id="seritIc"></div>
+</div>
+
+<!-- SAYILAR -->
+<section class="sayilar" id="sayilar">
+  <div class="sayi" data-reveal><b data-say="20">0</b><span>eser</span></div>
+  <div class="sayi" data-reveal><b data-say="5">0</b><span>lonca</span></div>
+  <div class="sayi" data-reveal><b data-say="6">0</b><span>platform</span></div>
+  <div class="sayi" data-reveal><b data-say="4">0</b><span>canlı sunucu</span></div>
+</section>
+
+<!-- LONCALAR -->
+<section class="guilds" id="loncalar">
+  <h2 class="sec-title" data-reveal>Loncalar</h2>
+  <p class="sec-sub" data-reveal>Sancağa dokun, o loncanın eserleri açılsın.</p>
+  <div class="sancaklar" id="guildGrid"></div>
+</section>
+
+<!-- MEKTUP -->
+<section class="letter" id="mektup">
+  <div class="scroll-paper" data-reveal data-tilt>
+    <h2>Bir Mektup Yollayın</h2>
+    <p>Yeni bir eser yazılması gerekiyorsa, ulakla haber gönderin.</p>
+    <a class="seal" href="mailto:mdenizytk@gmail.com" data-miknatis>mdenizytk@gmail.com</a>
+  </div>
+  <footer>DNZ Kroniği — el yazması, dijital mürekkeple çoğaltılmıştır.</footer>
+</section>
+
+<script src="data.js?v=21"></script>
+<script src="cizim.js?v=21"></script>
+<script src="nesne.js?v=21"></script>
+<script src="app.js?v=21"></script>
+<script src="hareket.js?v=21"></script>
+</body>
+</html>
