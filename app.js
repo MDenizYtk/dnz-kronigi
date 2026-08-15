@@ -99,6 +99,9 @@
           ? '<a class="bag" href="' + acikAdres + '" target="_blank" rel="noopener" data-miknatis>' +
             (e.baglanti || acikAdres.replace(/^https?:\/\//, '')) + '</a>'
           : '<span class="yakinda">Yakında</span>') +
+        (e.telefon
+          ? '<a class="bag" href="tel:' + e.telefon + '" data-miknatis>' + e.telefonYazi + '</a>'
+          : '') +
       '</div>';
     yazi.classList.add('gorunur');
   }

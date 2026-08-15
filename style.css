@@ -879,6 +879,7 @@ body{
 }
 .scroll-paper h2{font-family:var(--title); margin:0 0 10px; font-size:34px}
 .scroll-paper p{margin:0 0 26px; color:#4a3c22}
+.muhurler{display:flex; gap:14px; justify-content:center; flex-wrap:wrap}
 .seal{
   display:inline-block; font-family:var(--title); letter-spacing:.14em;
   font-size:14px; text-decoration:none; color:#f3e4bb;

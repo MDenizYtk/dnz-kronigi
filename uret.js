@@ -56,6 +56,7 @@ const jsonld = {
       name: 'M. Deniz',
       url: ADRES,
       email: 'mailto:mdenizytk@gmail.com',
+      telephone: '+905054134012',
       jobTitle: 'Yazılım geliştirici',
       knowsAbout: ['Web geliştirme', 'iOS uygulamaları', 'Yapay zeka', 'IoT', 'Node.js']
     },

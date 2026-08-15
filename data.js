@@ -150,7 +150,9 @@ window.USTA = {
   hikaye: "Yukarıdaki yirmi eserin hepsi tek elden çıktı: fikri, tasarımı, kodu, sunucusu ve kurulumu. Mühendislik okurken edinilmiş bir alışkanlık bu; gündelik hayatta takılan bir şey görünce çözümünü yazmak. Web, iOS, Android, sunucu tarafı ve nesnelerin interneti; iş hangisini gerektiriyorsa o. Yeni bir esere ihtiyacınız varsa ulakla haber gönderin.",
   etiket: ["Web", "iOS", "Android", "Node", "IoT", "Yapay zeka"],
   adres: "mailto:mdenizytk@gmail.com",
-  baglanti: "mdenizytk@gmail.com"
+  baglanti: "mdenizytk@gmail.com",
+  telefon: "+905054134012",
+  telefonYazi: "0505 413 40 12"
 };
 
 window.LONCALAR = {
