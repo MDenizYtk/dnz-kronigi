@@ -110,7 +110,7 @@
 
   // Her esere bir tam yakınlaşma turu
   var ADIM_VH = 95;
-  corridor.style.height = (duraklar.length * ADIM_VH + 100) + 'vh';
+  corridor.style.height = ((duraklar.length - 1) * ADIM_VH + 130) + 'vh';
 
   function guncelle() {
     var vh = window.innerHeight, vw = window.innerWidth;
@@ -129,7 +129,8 @@
     var toplam = corridor.offsetHeight - vh;
     var p = kelepce(-cRect.top / (toplam || 1), 0, 1);
     var n = sahneler.length;
-    var t = p * n;
+    // yolculuk son durakta, yani ustanın atölyesinde dinlenerek biter
+    var t = p * (n - 1);
 
     hudFill.style.width = (p * 100).toFixed(1) + '%';
     hudIndex.textContent = iki(kelepce(Math.floor(t) + 1, 1, eserler.length));
