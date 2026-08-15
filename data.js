@@ -139,6 +139,20 @@ window.ESERLER = [
   }
 ];
 
+// Kroniğin sonunda ustanın kendisi: koridorun son durağı.
+window.USTA = {
+  ad: "M. Deniz",
+  rumuz: "Bu kroniğin yazarı",
+  kunye: "Kronikçi",
+  yil: "2026",
+  durum: "Yazmaya devam",
+  kivilcim: "Bir şey eksik geldiğinde beklemek yerine oturup yazmak.",
+  hikaye: "Yukarıdaki yirmi eserin hepsi tek elden çıktı: fikri, tasarımı, kodu, sunucusu ve kurulumu. Mühendislik okurken edinilmiş bir alışkanlık bu; gündelik hayatta takılan bir şey görünce çözümünü yazmak. Web, iOS, Android, sunucu tarafı ve nesnelerin interneti; iş hangisini gerektiriyorsa o. Yeni bir esere ihtiyacınız varsa ulakla haber gönderin.",
+  etiket: ["Web", "iOS", "Android", "Node", "IoT", "Yapay zeka"],
+  adres: "mailto:mdenizytk@gmail.com",
+  baglanti: "mdenizytk@gmail.com"
+};
+
 window.LONCALAR = {
   "Kalem": "Yazı, not, öğrenme ve düşünce eserleri.",
   "Yol": "Harita, rota ve gezginlere ait olanlar.",

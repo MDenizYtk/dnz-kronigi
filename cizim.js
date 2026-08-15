@@ -224,6 +224,17 @@
       o += r(84, 168, 152, 18, p.kart, 9) + r(94, 174, 90, 6, p.cizgi, 3);
       return svg(o, p.arka);
     },
+    // Ustanın mührü
+    imza: function (p, ad) {
+      var o = r(0, 0, A, B, p.arka);
+      o += c(160, 96, 62, p.vurgu, .12) + c(160, 96, 46, p.vurgu, .2);
+      o += '<circle cx="160" cy="96" r="46" fill="none" stroke="' + p.vurgu + '" stroke-width="2"/>';
+      o += t(160, 106, 34, p.yazi, 700, 'middle') + 'DNZ</text>';
+      o += t(160, 158, 8, p.soluk, 400, 'middle') + 'ANNO DOMINI MMXXVI</text>';
+      o += r(96, 30, 128, 1, p.vurgu, 0) + r(96, 168, 128, 1, p.vurgu, 0);
+      return svg(o, p.arka);
+    },
+
     // Mutfak
     mutfak: function (p, ad) {
       var o = ustCubuk(p, ad);
@@ -262,6 +273,7 @@
     "DNZ Dijital":      { s: 'panel',    p: pal('#08090d', '#101218', '#181b24', '#e9ecf4', '#7c8496', '#0ea5e9', '#a855f7') },
     "Randevu":          { s: 'randevu',  p: pal('#100c0c', '#1a1414', '#261d1d', '#f6eeee', '#9b8686', '#e11d48', '#f59e0b') },
     "Çay İmparatorluğu":{ s: 'oyun',     p: pal('#140d08', '#1f1610', '#2b1f16', '#fbeedd', '#a8907a', '#e8a33d', '#c2410c') },
+    "M. Deniz":         { s: 'imza',     p: pal('#0d0b08', '#171209', '#241c10', '#f6ecd6', '#a2937a', '#c9a227', '#e3c765') },
     "Dolaptan Nefis Ziyafete": { s: 'mutfak', p: pal('#120e08', '#1d1710', '#282017', '#fdf3e3', '#a9917d', '#f59e0b', '#84cc16') }
   };
 

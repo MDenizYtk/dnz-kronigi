@@ -10,6 +10,7 @@ const ADRES = 'https://dnzdijital.work/';
 global.window = {};
 eval(fs.readFileSync('data.js', 'utf8'));
 const eserler = global.window.ESERLER;
+const usta = global.window.USTA;
 const loncalar = global.window.LONCALAR;
 
 const kacis = (m) => String(m).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -29,7 +30,15 @@ const statik = Object.keys(loncalar).map(function (ad) {
       '    <p><small>' + kacis(e.yil) + ' · ' + kacis(e.durum) + ' · ' + e.etiket.map(kacis).join(', ') + '</small></p>\n' +
       '  </article>\n').join('') +
     '</section>\n';
-}).join('');
+}).join('') +
+  (usta ? '<section class="statik-lonca">\n' +
+    '  <h3>Kronikçi</h3>\n' +
+    '  <article>\n' +
+    '    <h4>' + kacis(usta.ad) + ' — ' + kacis(usta.rumuz) + '</h4>\n' +
+    '    <p><strong>Kıvılcım:</strong> ' + kacis(usta.kivilcim) + '</p>\n' +
+    '    <p>' + kacis(usta.hikaye) + '</p>\n' +
+    '    <p><small>' + usta.etiket.map(kacis).join(', ') + ' · ' + kacis(usta.baglanti) + '</small></p>\n' +
+    '  </article>\n</section>\n' : '');
 
 let html = fs.readFileSync('index.html', 'utf8');
 html = html.replace(

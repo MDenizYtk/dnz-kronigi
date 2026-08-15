@@ -52,9 +52,10 @@
   var Z = 4;              // her adımda kaç kat yakınlaşılıyor (ekran boşluğu 1/4)
   var onKart = null;      // şu an önümüzde duran eser
 
-  /* ---- sahneler: her eser bir nesne ---- */
+  /* ---- sahneler: her eser bir nesne, en sonda ustanın atölyesi ---- */
+  var duraklar = eserler.concat(window.USTA ? [window.USTA] : []);
   deck.innerHTML = '';
-  var sahneler = eserler.map(function (e, i) {
+  var sahneler = duraklar.map(function (e, i) {
     var el = document.createElement('div');
     el.className = 'nesne';
     el.innerHTML = window.eserNesnesi(e.ad);
@@ -62,7 +63,7 @@
     el._renk = window.eserRengi(e.ad);
     el._giris = GIRIS[window.eserNesneTipi(e.ad)] || { x: 0, y: 0.3, r: 0 };
     el._eser = e;
-    if (e.adres && e.adres.indexOf('localhost') === -1) el._adres = e.adres;
+    if (e.adres && e.adres.indexOf('localhost') === -1 && e.adres.indexOf('mailto:') !== 0) el._adres = e.adres;
     deck.appendChild(el);
     return el;
   });
@@ -76,18 +77,21 @@
   function yaziYaz(i) {
     if (i === yaziIndeks) return;
     yaziIndeks = i;
-    var e = eserler[i];
+    var e = duraklar[i];
     if (!e) { yazi.classList.remove('gorunur'); return; }
     // yalnızca gerçekten yayında olan adresler bağlantı olur, kalanlar "yakında"
     var acikAdres = (e.adres && e.adres.indexOf('localhost') === -1) ? e.adres : null;
+    var postaMi = acikAdres && acikAdres.indexOf('mailto:') === 0;
     var durumSinif = 'd-' + (e.durum || '').toLowerCase().replace(/[^a-zçğıöşü]/g, '');
     yazi.style.setProperty('--tema', window.eserRengi(e.ad).vurgu);
     yazi.style.setProperty('--tema2', window.eserRengi(e.ad).vurgu2);
+    var kunye = e.kunye ? e.kunye : 'Eser ' + iki(i + 1) + ' / ' + iki(eserler.length);
+    var altBaslik = e.lonca ? (e.rumuz + ' · ' + e.lonca + ' Loncası') : e.rumuz;
     yazi.innerHTML =
-      '<span class="kunye">Eser ' + iki(i + 1) + ' / ' + iki(eserler.length) +
+      '<span class="kunye">' + kunye +
         '<em>' + e.yil + '</em><b class="' + durumSinif + '">' + e.durum + '</b></span>' +
       '<h3>' + e.ad + '</h3>' +
-      '<p class="rumuz">' + e.rumuz + ' · ' + e.lonca + ' Loncası</p>' +
+      '<p class="rumuz">' + altBaslik + '</p>' +
       '<p class="kivilcim">' + e.kivilcim + '</p>' +
       '<p class="hikaye">' + e.hikaye + '</p>' +
       '<div class="etiketler">' + e.etiket.map(function (t) { return '<i>' + t + '</i>'; }).join('') +
@@ -103,7 +107,7 @@
 
   // Her esere bir tam yakınlaşma turu
   var ADIM_VH = 95;
-  corridor.style.height = (eserler.length * ADIM_VH + 100) + 'vh';
+  corridor.style.height = (duraklar.length * ADIM_VH + 100) + 'vh';
 
   function guncelle() {
     var vh = window.innerHeight, vw = window.innerWidth;
@@ -125,7 +129,7 @@
     var t = p * n;
 
     hudFill.style.width = (p * 100).toFixed(1) + '%';
-    hudIndex.textContent = iki(kelepce(Math.floor(t) + 1, 1, n));
+    hudIndex.textContent = iki(kelepce(Math.floor(t) + 1, 1, eserler.length));
 
     onKart = null;
     var enNet = 0, enRenk = null, enIndeks = 0;

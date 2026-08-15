@@ -133,6 +133,22 @@
       return ic;
     },
 
+    /* ustanın atölyesi: masa lambası, sandalye, defter ve ekran */
+    atolye: function (r) {
+      return '<path d="M170 720 L1430 720 L1430 752 L170 752 Z" fill="#1b1610" stroke="' + r.vurgu + '" stroke-width="4"/>' +
+        '<path d="M250 752 L250 900 M1350 752 L1350 900" stroke="' + r.vurgu + '" stroke-width="8" stroke-linecap="round"/>' +
+        '<g stroke="' + r.vurgu + '" stroke-width="6" fill="none" stroke-linecap="round">' +
+        '<path d="M300 720 L300 560 L420 470"/><path d="M300 620 L390 560"/></g>' +
+        '<path d="M370 430 L470 430 L440 500 L400 500 Z" fill="' + r.vurgu2 + '" opacity=".85"/>' +
+        '<ellipse cx="420" cy="600" rx="210" ry="130" fill="' + r.vurgu2 + '" opacity=".12"/>' +
+        '<path d="M1120 720 L1120 610 L1300 610 L1300 720" fill="none" stroke="' + r.vurgu + '" stroke-width="6"/>' +
+        '<path d="M1150 610 L1150 500 L1270 500 L1270 610" fill="none" stroke="' + r.vurgu + '" stroke-width="6"/>' +
+        '<rect x="1046" y="672" width="70" height="48" rx="8" fill="none" stroke="' + r.vurgu + '" stroke-width="4"/>' +
+        '<circle cx="1010" cy="700" r="20" fill="none" stroke="' + r.vurgu2 + '" stroke-width="4"/>' +
+        '<path d="M600 690 L860 690 L860 718 L600 718 Z" fill="#241c10" stroke="' + r.vurgu + '" stroke-width="3"/>' +
+        '<rect x="470" y="250" width="660" height="440" rx="18" fill="#12100b" stroke="' + r.vurgu + '" stroke-width="5"/>';
+    },
+
     /* kalemli tablet */
     tablet: function (r) {
       return '<rect x="430" y="200" width="740" height="620" rx="28" fill="#14161c" stroke="' + r.vurgu + '" stroke-width="5"/>' +
@@ -150,6 +166,7 @@
     "UniDefter": 'tablet',
     "KodYolu": 'dizustu', "Mağaza": 'dizustu', "DNZ Dijital": 'dizustu', "Hazırlık": 'dizustu',
     "MotoKesif Sunucusu": 'sunucu', "Notçu Sunucusu": 'sunucu', "Nöbetçi": 'sunucu',
+    "M. Deniz": 'atolye',
     "SeraSensor": 'sera', "AtıkTakip": 'kutu', "Randevu": 'ayna', "Jarvis": 'hoparlor'
   };
 
