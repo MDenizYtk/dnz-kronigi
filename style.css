@@ -790,6 +790,12 @@ body{
 }
 .sec-sub{color:var(--parch-2); opacity:.75; margin:12px 0 60px}
 
+/* JavaScript gelene kadar görünen sabit metin */
+.statik-lonca{text-align:left; max-width:760px; margin:0 auto 40px; color:var(--parch-2)}
+.statik-lonca h3{font-family:var(--title); color:var(--gold-soft); margin:0 0 6px}
+.statik-lonca h4{font-family:var(--title); color:var(--parch); margin:22px 0 6px; font-size:19px}
+.statik-lonca p{margin:0 0 8px; font-size:16px}
+
 .sancaklar{display:flex; gap:14px; height:min(560px, 72vh); text-align:left}
 .sancak{
   position:relative; flex:0 0 92px; overflow:hidden; cursor:pointer;

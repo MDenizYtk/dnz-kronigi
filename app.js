@@ -183,6 +183,8 @@
 
   /* ---- Loncalar: yan yana asılı sancaklar, dokununca açılır ---- */
   var grid = document.getElementById('guildGrid');
+  // arama motorları için sayfada duran sabit metnin yerini sancaklar alır
+  grid.innerHTML = '';
   var loncalar = window.LONCALAR || {};
   var sancakSira = [];
 

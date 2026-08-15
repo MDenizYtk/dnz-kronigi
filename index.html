@@ -3,11 +3,288 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DNZ Kroniği — Yapılmış İşlerin Kütüğü</title>
+<title>DNZ Kroniği — Yazılım Projeleri ve Portfolyo</title>
+<meta name="description" content="DNZ Kroniği: Deniz'in yazdığı yirmi uygulamanın kütüğü. Atlas, Questigo, SeraSensor, KodYolu, Sekreter ve diğerleri; her birinin doğuş hikâyesi ve ne işe yaradığı.">
+<meta name="author" content="M. Deniz">
+<meta name="theme-color" content="#0b0906">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://mdenizytk.github.io/dnz-kronigi/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="DNZ Kroniği">
+<meta property="og:title" content="DNZ Kroniği — Yapılmış İşlerin Kütüğü">
+<meta property="og:description" content="Yirmi uygulama, yirmi küçük dert ve her birine yazılmış bir çözüm. Aşağı kaydırdıkça her uygulamanın içine giren bir kronik.">
+<meta property="og:url" content="https://mdenizytk.github.io/dnz-kronigi/">
+<meta property="og:image" content="https://mdenizytk.github.io/dnz-kronigi/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DNZ Kroniği — Yapılmış İşlerin Kütüğü">
+<meta name="twitter:description" content="Yirmi uygulama, yirmi küçük dert ve her birine yazılmış bir çözüm.">
+<meta name="twitter:image" content="https://mdenizytk.github.io/dnz-kronigi/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0906'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' font-weight='700' text-anchor='middle' fill='%23e3c765'%3ED%3C/text%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=22">
+<link rel="stylesheet" href="style.css?v=23">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi",
+   "name": "M. Deniz",
+   "url": "https://mdenizytk.github.io/dnz-kronigi/",
+   "email": "mailto:mdenizytk@gmail.com",
+   "jobTitle": "Yazılım geliştirici",
+   "knowsAbout": [
+    "Web geliştirme",
+    "iOS uygulamaları",
+    "Yapay zeka",
+    "IoT",
+    "Node.js"
+   ]
+  },
+  {
+   "@type": "CollectionPage",
+   "@id": "https://mdenizytk.github.io/dnz-kronigi/",
+   "name": "DNZ Kroniği",
+   "inLanguage": "tr",
+   "description": "Yirmi uygulamanın kütüğü: her birinin doğuş hikâyesi ve ne işe yaradığı.",
+   "author": {
+    "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+   },
+   "hasPart": [
+    {
+     "@type": "SoftwareApplication",
+     "name": "Atlas",
+     "alternateName": "Notların Şehri",
+     "description": "Dersler, fikirler ve yapılacaklar üç ayrı uygulamaya dağılmıştı. Hepsini tek bir şehirde toplamak istedim: sayfalar sokak, bağlantılar cadde oldu. Bugün atlasnot.com adresinde ayakta duruyor ve her gün kullanıyorum.",
+     "applicationCategory": "Web",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     },
+     "url": "https://atlasnot.com"
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Questigo",
+     "alternateName": "Haritanın Efendisi",
+     "description": "Motosikletle çıkılan bir yolun hikâyesi, telefondaki ham bir çizgiden ibaret kalıyordu. Questigo o çizgiyi anlatılabilir hale getiriyor: rota, hız, manzara ve o rotayı yürüyen insanlar. Motosikletçi de koşucu da bisikletçi de aynı haritada buluşuyor.",
+     "applicationCategory": "iOS",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Moto",
+     "alternateName": "Demir At",
+     "description": "Motosiklet sürücüsünün derdi başkadır: yakıt, viraj, hava, mola. Bu yüzden Questigo'dan ayrı, sadece motosiklete adanmış bir kardeş uygulama çıktı. Aynı sunucuyu paylaşıyorlar ama Moto yalnız tek bir insanı düşünüyor: kaskın altındakini.",
+     "applicationCategory": "iOS",
+     "dateCreated": "2026",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "MotoKesif Sunucusu",
+     "alternateName": "Kalenin Temeli",
+     "description": "Görünmeyen ama olmazsa hiçbir şeyin yürümediği katman. Rotalar, hesaplar ve gruplar burada duruyor. Hetzner'daki bir sunucuda, kimsenin farkına varmadığı bir sessizlikle nöbet tutuyor. En iyi iltifat, kimsenin ondan söz etmemesi.",
+     "applicationCategory": "Node",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "SeraSensor",
+     "alternateName": "Tarlanın Gözü",
+     "description": "Toprağın nemini bilmeden sulamak, ya suyu ya ürünü israf etmek demek. Tarlaya konan LoRaWAN sensörleri toprağı dinliyor, panel de suyun ne zaman ve ne kadar açılacağını söylüyor. Amaç teknoloji göstermek değil, bir insanın kilometrelerce yolunu ve suyunu geri vermek.",
+     "applicationCategory": "IoT",
+     "dateCreated": "2026",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Sekreter",
+     "alternateName": "Sadık Kâtip",
+     "description": "Planlar konuşmaların içinde saklı kalıyor. Sekreter, ses kaydını ve yazışmayı dinleyip içinden takvimi çıkarıyor: kim, ne zaman, nerede. Ders programını da bildiği için boş saatlerin nereye denk geldiğini kendisi buluyor.",
+     "applicationCategory": "Yapay zeka",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Jarvis",
+     "alternateName": "Duvardaki Ses",
+     "description": "Menü çubuğunda duran, Türkçe konuşulunca Türkçe cevap veren bir asistan. Modeller kendi bilgisayarında çalışıyor, yani söylenenler odadan dışarı çıkmıyor. Yardım istemek için bir tuşa basmak yetiyor.",
+     "applicationCategory": "macOS",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "KodYolu",
+     "alternateName": "Çıraklık Yolu",
+     "description": "Müfredat sırayla ilerliyor ama öğrenci pratiği bulamıyor. KodYolu müfredatı oyuna çeviriyor: on iki yol, her adımda küçük bir görev, sonunda gerçekten yazabilen bir el. Hesap ve senkron sayesinde telefonda kalınan yerden bilgisayarda devam ediliyor.",
+     "applicationCategory": "Eğitim",
+     "dateCreated": "2026",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "UniDefter",
+     "alternateName": "Talebe Tomarı",
+     "description": "Mühendislik derslerinde anlatım bir yerde, defter başka yerde kalıyor. UniDefter ikisini yan yana koyuyor: solda ders videosu, sağda Apple Pencil ile yazılan sayfa. Sınav haftasında aranan not, ait olduğu dersin içinde duruyor.",
+     "applicationCategory": "iPad",
+     "dateCreated": "2026",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Defter",
+     "alternateName": "Boş Sayfa",
+     "description": "Tarayıcıyı aç, yaz, kapat. Kurulum yok, hesap yok, bekleme yok. El yazısı doğrudan tarayıcının kendi sandığında kalıyor. Bazen en iyi araç, kendini unutturandır.",
+     "applicationCategory": "Web",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Hazırlık",
+     "alternateName": "Lisan Pusulası",
+     "description": "Seviyeni giriyorsun, ne kadar yolun kaldığını ve haftada kaç saatle biteceğini söylüyor. Belirsizlik en çok yoran şeydir; bu küçük araç belirsizliği takvime çeviriyor.",
+     "applicationCategory": "Web",
+     "dateCreated": "2026",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "AtıkTakip",
+     "alternateName": "Şehrin Temizliği",
+     "description": "Kamera kutunun doluluğunu görüyor, sistem hangi kutunun gerçekten sıra beklediğini söylüyor. Karekod ile saha görevlisi kontrolü onaylıyor, panelde bütün şehir tek ekranda duruyor. Kazanan yakıt, zaman ve sokak.",
+     "applicationCategory": "Görüntü işleme",
+     "dateCreated": "2026",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Nöbetçi",
+     "alternateName": "Kule Bekçisi",
+     "description": "Bütün siteleri ve sunucuları belirli aralıklarla yokluyor. Biri düşerse haber veriyor, Telegram borusu bunun için hazır bekliyor. Küçük bir panel ama gece rahat uyutuyor.",
+     "applicationCategory": "İzleme",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Mağaza",
+     "alternateName": "Tek Kişilik Pazar",
+     "description": "Trendyol tarzı bir vitrin ama tek kişinin yönetebileceği kadar sade. Ürün, sepet ve sipariş akışı hazır; ödeme kısmı bilerek sonraya bırakıldı. Amaç, kendi dükkânını kurmanın büyük bir ekip gerektirmediğini göstermek.",
+     "applicationCategory": "Next.js",
+     "dateCreated": "2026",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "DNZ Dijital",
+     "alternateName": "Ustanın Dükkânı",
+     "description": "Yapılan işler, fiyatlar ve randevu tek sayfada. Müşteri kendi gününü seçiyor, pazarlık yerine takvim konuşuyor. Fiyatlar tek bir dosyada durduğu için güncellemek beş saniye sürüyor.",
+     "applicationCategory": "Hizmet",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Randevu",
+     "alternateName": "Berber Kütüğü",
+     "description": "Küçük esnafın randevusu hâlâ kâğıtta ve telefonda. Bu şablon o defteri ekrana taşıyor: gün, saat, müşteri ve iptal. Bir dükkâna kurulup teslim edilecek kadar hazır, on dakikada devreye giriyor.",
+     "applicationCategory": "Şablon",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Dolaptan Nefis Ziyafete",
+     "alternateName": "Mutfak Simyası",
+     "description": "Elde ne varsa onunla yemek çıkarmak, tarif bulmaktan zordur. Uygulama malzemeleri alıp bu akşam yapılabilecek olanı öneriyor. Alışverişe çıkmadan, israf etmeden.",
+     "applicationCategory": "Web",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Çay İmparatorluğu",
+     "alternateName": "Sonsuz Demlik",
+     "description": "Tıkla, çay birikir; birikeni yatır, kendiliğinden demlenir. Kütüphane yok, tek bir dosyada saf JavaScript var. Yapılış amacı eğlenceydi ama en çok ders veren proje oldu: sadelik, oyunun kendisidir.",
+     "applicationCategory": "Oyun",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Notçu Sunucusu",
+     "alternateName": "Sessiz Hizmetkâr",
+     "description": "Not uygulamalarının arkasındaki taşıyıcı kat. Yazılan her satırı alıp diğer cihaza ulaştırıyor. Görünmeyen işlerin en iyi yanı, iyi çalıştığında kimsenin fark etmemesi.",
+     "applicationCategory": "Node",
+     "dateCreated": "2025",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     }
+    },
+    {
+     "@type": "SoftwareApplication",
+     "name": "Atlas Mobil",
+     "alternateName": "Cepteki Şehir",
+     "description": "Atlas'ın telefondaki hali. Yolda, otobüste, sırada beklerken açılıp iki satır yazmak için var. Aynı notlar, aynı bağlantılar, sadece avuç içine sığdırılmış hali.",
+     "applicationCategory": "Mobil",
+     "dateCreated": "2026",
+     "author": {
+      "@id": "https://mdenizytk.github.io/dnz-kronigi/#kisi"
+     },
+     "url": "https://atlasnot.com"
+    }
+   ]
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -98,7 +375,149 @@
 <section class="guilds" id="loncalar">
   <h2 class="sec-title" data-reveal>Loncalar</h2>
   <p class="sec-sub" data-reveal>Sancağa dokun, o loncanın eserleri açılsın.</p>
-  <div class="sancaklar" id="guildGrid"></div>
+  <div class="sancaklar" id="guildGrid">
+<!-- statik icerik: JavaScript calisinca yerini sancaklar alir -->
+<section class="statik-lonca">
+  <h3>Kalem Loncası</h3>
+  <p>Yazı, not, öğrenme ve düşünce eserleri.</p>
+  <article>
+    <h4>Atlas — Notların Şehri</h4>
+    <p><strong>Kıvılcım:</strong> Aynı notu üç ayrı yerde arayıp hiçbirinde bulamamak.</p>
+    <p>Dersler, fikirler ve yapılacaklar üç ayrı uygulamaya dağılmıştı. Hepsini tek bir şehirde toplamak istedim: sayfalar sokak, bağlantılar cadde oldu. Bugün atlasnot.com adresinde ayakta duruyor ve her gün kullanıyorum.</p>
+    <p><small>2025 · Canlı · Web, Mobil, Canlı</small></p>
+  </article>
+  <article>
+    <h4>Sekreter — Sadık Kâtip</h4>
+    <p><strong>Kıvılcım:</strong> Sesli mesajda konuşulan buluşmanın unutulup gitmesi.</p>
+    <p>Planlar konuşmaların içinde saklı kalıyor. Sekreter, ses kaydını ve yazışmayı dinleyip içinden takvimi çıkarıyor: kim, ne zaman, nerede. Ders programını da bildiği için boş saatlerin nereye denk geldiğini kendisi buluyor.</p>
+    <p><small>2025 · Canlı · Yapay zeka, Takvim, Ses</small></p>
+  </article>
+  <article>
+    <h4>Jarvis — Duvardaki Ses</h4>
+    <p><strong>Kıvılcım:</strong> Klavyeye uzanmadan bir şey sorabilmek isteği.</p>
+    <p>Menü çubuğunda duran, Türkçe konuşulunca Türkçe cevap veren bir asistan. Modeller kendi bilgisayarında çalışıyor, yani söylenenler odadan dışarı çıkmıyor. Yardım istemek için bir tuşa basmak yetiyor.</p>
+    <p><small>2025 · Canlı · macOS, Ses, Yerel model</small></p>
+  </article>
+  <article>
+    <h4>KodYolu — Çıraklık Yolu</h4>
+    <p><strong>Kıvılcım:</strong> Üniversitede dersi geçmek ile kod yazmayı öğrenmenin aynı şey olmaması.</p>
+    <p>Müfredat sırayla ilerliyor ama öğrenci pratiği bulamıyor. KodYolu müfredatı oyuna çeviriyor: on iki yol, her adımda küçük bir görev, sonunda gerçekten yazabilen bir el. Hesap ve senkron sayesinde telefonda kalınan yerden bilgisayarda devam ediliyor.</p>
+    <p><small>2026 · Geliştiriliyor · Eğitim, Web, iOS, Android</small></p>
+  </article>
+  <article>
+    <h4>UniDefter — Talebe Tomarı</h4>
+    <p><strong>Kıvılcım:</strong> Aynı anda hem videoyu izleyip hem not tutmanın imkânsızlığı.</p>
+    <p>Mühendislik derslerinde anlatım bir yerde, defter başka yerde kalıyor. UniDefter ikisini yan yana koyuyor: solda ders videosu, sağda Apple Pencil ile yazılan sayfa. Sınav haftasında aranan not, ait olduğu dersin içinde duruyor.</p>
+    <p><small>2026 · Geliştiriliyor · iPad, SwiftUI, PencilKit</small></p>
+  </article>
+  <article>
+    <h4>Defter — Boş Sayfa</h4>
+    <p><strong>Kıvılcım:</strong> Bir fikri yazmak için uygulama indirmek zorunda kalmak.</p>
+    <p>Tarayıcıyı aç, yaz, kapat. Kurulum yok, hesap yok, bekleme yok. El yazısı doğrudan tarayıcının kendi sandığında kalıyor. Bazen en iyi araç, kendini unutturandır.</p>
+    <p><small>2025 · Canlı · Web, El yazısı</small></p>
+  </article>
+  <article>
+    <h4>Hazırlık — Lisan Pusulası</h4>
+    <p><strong>Kıvılcım:</strong> Hazırlık sınıfında bir yılın nasıl geçeceğini kimsenin söylememesi.</p>
+    <p>Seviyeni giriyorsun, ne kadar yolun kaldığını ve haftada kaç saatle biteceğini söylüyor. Belirsizlik en çok yoran şeydir; bu küçük araç belirsizliği takvime çeviriyor.</p>
+    <p><small>2026 · Canlı · Web, Planlama</small></p>
+  </article>
+  <article>
+    <h4>Atlas Mobil — Cepteki Şehir</h4>
+    <p><strong>Kıvılcım:</strong> Aklına gelen fikrin masaya oturana kadar kaçması.</p>
+    <p>Atlas'ın telefondaki hali. Yolda, otobüste, sırada beklerken açılıp iki satır yazmak için var. Aynı notlar, aynı bağlantılar, sadece avuç içine sığdırılmış hali.</p>
+    <p><small>2026 · Geliştiriliyor · Mobil, Atlas, Senkron</small></p>
+  </article>
+</section>
+<section class="statik-lonca">
+  <h3>Yol Loncası</h3>
+  <p>Harita, rota ve gezginlere ait olanlar.</p>
+  <article>
+    <h4>Questigo — Haritanın Efendisi</h4>
+    <p><strong>Kıvılcım:</strong> Güzel bir rotayı arkadaşına anlatmaya çalışıp beceremeyince.</p>
+    <p>Motosikletle çıkılan bir yolun hikâyesi, telefondaki ham bir çizgiden ibaret kalıyordu. Questigo o çizgiyi anlatılabilir hale getiriyor: rota, hız, manzara ve o rotayı yürüyen insanlar. Motosikletçi de koşucu da bisikletçi de aynı haritada buluşuyor.</p>
+    <p><small>2025 · Geliştiriliyor · iOS, Harita, Topluluk</small></p>
+  </article>
+  <article>
+    <h4>Moto — Demir At</h4>
+    <p><strong>Kıvılcım:</strong> Her sporu tek uygulamaya sığdırmanın motorcuya haksızlık olması.</p>
+    <p>Motosiklet sürücüsünün derdi başkadır: yakıt, viraj, hava, mola. Bu yüzden Questigo'dan ayrı, sadece motosiklete adanmış bir kardeş uygulama çıktı. Aynı sunucuyu paylaşıyorlar ama Moto yalnız tek bir insanı düşünüyor: kaskın altındakini.</p>
+    <p><small>2026 · Geliştiriliyor · iOS, Motosiklet</small></p>
+  </article>
+</section>
+<section class="statik-lonca">
+  <h3>Sur Loncası</h3>
+  <p>Sunucular, izleme ve kalenin görünmeyen taşları.</p>
+  <article>
+    <h4>MotoKesif Sunucusu — Kalenin Temeli</h4>
+    <p><strong>Kıvılcım:</strong> İki uygulamanın aynı veriyi iki kere saklamaya başlaması.</p>
+    <p>Görünmeyen ama olmazsa hiçbir şeyin yürümediği katman. Rotalar, hesaplar ve gruplar burada duruyor. Hetzner'daki bir sunucuda, kimsenin farkına varmadığı bir sessizlikle nöbet tutuyor. En iyi iltifat, kimsenin ondan söz etmemesi.</p>
+    <p><small>2025 · Canlı · Node, Sunucu, Hetzner</small></p>
+  </article>
+  <article>
+    <h4>Nöbetçi — Kule Bekçisi</h4>
+    <p><strong>Kıvılcım:</strong> Kendi sitenin çöktüğünü müşteriden öğrenmek.</p>
+    <p>Bütün siteleri ve sunucuları belirli aralıklarla yokluyor. Biri düşerse haber veriyor, Telegram borusu bunun için hazır bekliyor. Küçük bir panel ama gece rahat uyutuyor.</p>
+    <p><small>2025 · Canlı · İzleme, Panel, Telegram</small></p>
+  </article>
+  <article>
+    <h4>Notçu Sunucusu — Sessiz Hizmetkâr</h4>
+    <p><strong>Kıvılcım:</strong> Notların yalnız tek bir cihazda kalması.</p>
+    <p>Not uygulamalarının arkasındaki taşıyıcı kat. Yazılan her satırı alıp diğer cihaza ulaştırıyor. Görünmeyen işlerin en iyi yanı, iyi çalıştığında kimsenin fark etmemesi.</p>
+    <p><small>2025 · Canlı · Node, Sunucu, Senkron</small></p>
+  </article>
+</section>
+<section class="statik-lonca">
+  <h3>Çarşı Loncası</h3>
+  <p>Satış, randevu ve para kazandıran tezgâhlar.</p>
+  <article>
+    <h4>Mağaza — Tek Kişilik Pazar</h4>
+    <p><strong>Kıvılcım:</strong> Küçük satıcının pazaryerine ödediği komisyon.</p>
+    <p>Trendyol tarzı bir vitrin ama tek kişinin yönetebileceği kadar sade. Ürün, sepet ve sipariş akışı hazır; ödeme kısmı bilerek sonraya bırakıldı. Amaç, kendi dükkânını kurmanın büyük bir ekip gerektirmediğini göstermek.</p>
+    <p><small>2026 · Tohum · Next.js, Prisma, Ticaret</small></p>
+  </article>
+  <article>
+    <h4>DNZ Dijital — Ustanın Dükkânı</h4>
+    <p><strong>Kıvılcım:</strong> Her müşteriye fiyatı tek tek anlatmaktan yorulmak.</p>
+    <p>Yapılan işler, fiyatlar ve randevu tek sayfada. Müşteri kendi gününü seçiyor, pazarlık yerine takvim konuşuyor. Fiyatlar tek bir dosyada durduğu için güncellemek beş saniye sürüyor.</p>
+    <p><small>2025 · Canlı · Hizmet, Randevu, Satış</small></p>
+  </article>
+  <article>
+    <h4>Randevu — Berber Kütüğü</h4>
+    <p><strong>Kıvılcım:</strong> Berberin defterine kurşun kalemle yazdığı isimler.</p>
+    <p>Küçük esnafın randevusu hâlâ kâğıtta ve telefonda. Bu şablon o defteri ekrana taşıyor: gün, saat, müşteri ve iptal. Bir dükkâna kurulup teslim edilecek kadar hazır, on dakikada devreye giriyor.</p>
+    <p><small>2025 · Satışa hazır · Şablon, Randevu, Esnaf</small></p>
+  </article>
+  <article>
+    <h4>Çay İmparatorluğu — Sonsuz Demlik</h4>
+    <p><strong>Kıvılcım:</strong> Bir öğleden sonrası ve şu soru: en sade oyun ne kadar bağımlılık yapar.</p>
+    <p>Tıkla, çay birikir; birikeni yatır, kendiliğinden demlenir. Kütüphane yok, tek bir dosyada saf JavaScript var. Yapılış amacı eğlenceydi ama en çok ders veren proje oldu: sadelik, oyunun kendisidir.</p>
+    <p><small>2025 · Canlı · Oyun, JavaScript</small></p>
+  </article>
+</section>
+<section class="statik-lonca">
+  <h3>Toprak Loncası</h3>
+  <p>Tarla, şehir ve mutfak, yani maddi dünya.</p>
+  <article>
+    <h4>SeraSensor — Tarlanın Gözü</h4>
+    <p><strong>Kıvılcım:</strong> Bir çiftçinin tarlayı görmek için her sabah yola çıkması.</p>
+    <p>Toprağın nemini bilmeden sulamak, ya suyu ya ürünü israf etmek demek. Tarlaya konan LoRaWAN sensörleri toprağı dinliyor, panel de suyun ne zaman ve ne kadar açılacağını söylüyor. Amaç teknoloji göstermek değil, bir insanın kilometrelerce yolunu ve suyunu geri vermek.</p>
+    <p><small>2026 · Pilot · IoT, LoRaWAN, SaaS</small></p>
+  </article>
+  <article>
+    <h4>AtıkTakip — Şehrin Temizliği</h4>
+    <p><strong>Kıvılcım:</strong> Dolmamış kutuyu boşaltmaya giden çöp kamyonu.</p>
+    <p>Kamera kutunun doluluğunu görüyor, sistem hangi kutunun gerçekten sıra beklediğini söylüyor. Karekod ile saha görevlisi kontrolü onaylıyor, panelde bütün şehir tek ekranda duruyor. Kazanan yakıt, zaman ve sokak.</p>
+    <p><small>2026 · Geliştiriliyor · Görüntü işleme, Panel, Karekod</small></p>
+  </article>
+  <article>
+    <h4>Dolaptan Nefis Ziyafete — Mutfak Simyası</h4>
+    <p><strong>Kıvılcım:</strong> Akşam altıda buzdolabını açıp öylece bakmak.</p>
+    <p>Elde ne varsa onunla yemek çıkarmak, tarif bulmaktan zordur. Uygulama malzemeleri alıp bu akşam yapılabilecek olanı öneriyor. Alışverişe çıkmadan, israf etmeden.</p>
+    <p><small>2025 · Geliştiriliyor · Web, Mobil, Yemek</small></p>
+  </article>
+</section>
+</div>
 </section>
 
 <!-- MEKTUP -->
@@ -111,10 +530,10 @@
   <footer>DNZ Kroniği — el yazması, dijital mürekkeple çoğaltılmıştır.</footer>
 </section>
 
-<script src="data.js?v=22"></script>
-<script src="cizim.js?v=22"></script>
-<script src="nesne.js?v=22"></script>
-<script src="app.js?v=22"></script>
-<script src="hareket.js?v=22"></script>
+<script src="data.js?v=23"></script>
+<script src="cizim.js?v=23"></script>
+<script src="nesne.js?v=23"></script>
+<script src="app.js?v=23"></script>
+<script src="hareket.js?v=23"></script>
 </body>
 </html>
